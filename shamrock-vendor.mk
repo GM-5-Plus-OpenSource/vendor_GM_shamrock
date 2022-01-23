@@ -1822,6 +1822,10 @@ PRODUCT_COPY_FILES += \
     vendor/GM/shamrock/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
     vendor/GM/shamrock/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so
 
+# WiFi
+PRODUCT_COPY_FILES += \
+    vendor/GM/shamrock/proprietary/vendor/bin/wcnss_service:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_service
+
 PRODUCT_PACKAGES += \
     libbtconfigstore \
     CneApp \
