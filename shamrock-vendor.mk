@@ -1592,6 +1592,14 @@ PRODUCT_COPY_FILES += \
     vendor/GM/shamrock/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/GM/shamrock/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so
 
+# Keystore
+PRODUCT_COPY_FILES += \
+    vendor/GM/shamrock/proprietary/vendor/lib64/hw/keystore.msm8952.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8952.so
+
+# Gatekeeper
+PRODUCT_COPY_FILES += \
+    vendor/GM/shamrock/proprietary/vendor/lib64/hw/gatekeeper.msm8952.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.msm8952.so
+
 PRODUCT_PACKAGES += \
     libbtconfigstore \
     CneApp \
