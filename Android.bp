@@ -87,3 +87,14 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
+android_app_import {
+	name: "PowerOffAlarm",
+	owner: "GM",
+	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
