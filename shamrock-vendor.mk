@@ -1774,6 +1774,11 @@ PRODUCT_COPY_FILES += \
     vendor/GM/shamrock/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
     vendor/GM/shamrock/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so
 
+# Thermal
+PRODUCT_COPY_FILES += \
+    vendor/GM/shamrock/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
+    vendor/GM/shamrock/proprietary/vendor/lib64/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalioctl.so
+
 PRODUCT_PACKAGES += \
     libbtconfigstore \
     CneApp \
@@ -1786,4 +1791,5 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     imssettings \
-    libsdm-disp-vndapis
+    libsdm-disp-vndapis \
+    libthermalclient
