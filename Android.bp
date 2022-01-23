@@ -189,3 +189,31 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
+android_app_import {
+	name: "TimeService",
+	owner: "GM",
+	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+	certificate: ":timeservice_app_cert-legacy-um",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "WfdService",
+	owner: "GM",
+	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "GM",
+	jars: ["proprietary/framework/WfdCommon.jar"],
+}
+
