@@ -1498,6 +1498,14 @@ PRODUCT_COPY_FILES += \
     vendor/GM/shamrock/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/GM/shamrock/proprietary/vendor/lib64/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qgl.so
 
+# Listen
+PRODUCT_COPY_FILES += \
+    vendor/GM/shamrock/proprietary/vendor/lib/hw/sound_trigger.primary.msm8952.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msm8952.so \
+    vendor/GM/shamrock/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
+    vendor/GM/shamrock/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/GM/shamrock/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
+    vendor/GM/shamrock/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so
+
 PRODUCT_PACKAGES += \
     libbtconfigstore \
     CneApp \
