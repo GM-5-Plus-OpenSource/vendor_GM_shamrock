@@ -1,6 +1,6 @@
 Copyright (C) 2022 - The LineageOS Project
 
-# Device Tree for General Mobile 5 Plus (shamrock)
+# Vendor Tree for General Mobile 5 Plus (shamrock)
 
 ## Device specifications
 
