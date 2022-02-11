@@ -1907,6 +1907,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/GM/shamrock/proprietary/vendor/bin/wcnss_service:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_service
 
+# Core Control
+PRODUCT_COPY_FILES += \
+    vendor/GM/shamrock/proprietary/lib/modules/core_ctl.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/core_ctl.ko
+
 PRODUCT_PACKAGES += \
     libbtconfigstore \
     CneApp \
